@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Website loaded successfully");
 });
 
-// For the dialogue and options
+// For text and options
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('optionButtons')
 
@@ -22,31 +22,40 @@ function showTextNode(textNodeIndex) {
     }
 
     textNode.options.forEach(option => {
-        if (showOption(option)) {
-            const button = document.createElement('button')
-            button.innerText = option.text
-            button.classList.add('btn')
-            button.addEventListener('click', () => selectOption(option))
-            optionButtonsElement.appendChild(button)
-        }
-    }
-    )
+        const button = document.createElement('button')
+        button.innerText = option.text
+        button.classList.add('btn')
+        button.addEventListener('click', () => selectOption(option))
+        optionButtonsElement.appendChild(button)
+    })
 }
 
-// Show option if there is a required state or none
-function showOption(option) {
-    return option.requiredState == null || option.requiredState(state)
-}
-// If a state changed
 function selectOption(option) {
+    // If option has link then open in new tab then return
+    if (option.link) {
+        window.open(option.link, '_blank')
+        return
+    }
+    // Else, update state and text node
     const nextTextNodeId = option.nextText
     state = Object.assign(state, option.setState)
     showTextNode(nextTextNodeId)
-}
-// Open a link to a new window
-function isALink(option) {
-    if (option.requiredState(state)) {
-        button.onclick = () => window.open(option.link, "_blank")
+    // Preload images
+    if (option.backgroundImages) {
+        option.backgroundImages.forEach(image => {
+            const img = new Image();
+            img.src = image;
+        });
+
+        const body = document.body;
+        let index = 0;
+        const interval = setInterval(() => {
+            body.style.backgroundImage = `url(${option.backgroundImages[index]})`;
+            index++;
+            if (index >= option.backgroundImages.length) {
+                clearInterval(interval);
+            }
+        }, 100); // Change image every 100ms
     }
 }
 // Text and options
@@ -57,12 +66,13 @@ const textNodes = [
         options: [
             {
                 text: 'Learn more about Mikaela',
-                setState: { isLink: true },
-                nextText: 2
+                nextText: 2,
+                backgroundImages: ['', '', '']
             },
             {
                 text: 'View Mikaela\'s portfolio',
-                nextText: 3
+                nextText: 3,
+                backgroundImages: ['', '', '']
             },
         ]
     },
@@ -72,28 +82,24 @@ const textNodes = [
         options: [
             {
                 text: 'Github (code)',
-                link: 'https://github.com/MikaelaMontaos',
-                requiredState: (currentState) => currentState.isLink
+                link: 'https://github.com/MikaelaMontaos'
             },
             {
                 text: 'LinkedIn',
-                link: 'https://www.linkedin.com/in/mmontaos/',
-                requiredState: (currentState) => currentState.isLink
+                link: 'https://www.linkedin.com/in/mmontaos/'
             },
             {
                 text: 'Instagram (art)',
-                link: 'https://www.instagram.com/mika.otome/',
-                requiredState: (currentState) => currentState.isLink
+                link: 'https://www.instagram.com/mika.otome/'
             },
             {
                 text: 'Resume',
-                link: 'Mikaela_Montaos_Resume.pdf',
-                requiredState: (currentState) => currentState.isLink
+                link: 'Mikaela_Montaos_Resume.pdf'
             },
             {
                 text: 'Back',
-                setState: { isLink: false },
-                nextText: 1
+                nextText: 1,
+                backgroundImages: ['', '', '']
             }
         ]
     },
@@ -102,8 +108,21 @@ const textNodes = [
         text: 'Check out these games I worked on. Some projects I worked solo and some I worked as part of a team.',
         options: [
             {
+                text: 'Oublivious on Steam',
+                link: 'https://store.steampowered.com/app/3388360/Oublivious/'
+            },
+            {
+                text: 'Oublivious on itch.io',
+                link: 'https://oubliviousteam.itch.io/oublivious'
+            },
+            {
+                text: 'Coconut Cascade on itch.io',
+                link: 'https://mikaela-m-09.itch.io/coconut-cascade'
+            },
+            {
                 text: 'Back',
-                nextText: 1
+                nextText: 1,
+                backgroundImages: ['', '', '']
             }
         ]
     }
