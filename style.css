@@ -19,39 +19,54 @@
     box-sizing: border-box;
     font-family: nexa;
 }
+
 body {
     align-items: center;
-    background-color: #37393aff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-
     height: 100vh;
     width: 100vw;
-
     margin: 0;
     padding: 0;
+    transition: background-image 0.3s ease-in-out;
 }
 
-.container {
+#container {
     width: 80%;
     max-width: 80vw;
     margin-top: 25%;
 }
 
 button {
-    font-size: 130%;
+    font-size: 90%;
 }
-/* Each button */
+
 .btn {
-    background-color: #c7d3ddff;
-    border: 1% solid #77b6eaff;
-    padding: 2%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(199, 211, 221, 0.4);
+    border: 2px solid rgba(119, 182, 234, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    color: #1a1a1a;
+    opacity: 0.6;
     outline: none;
-    box-shadow: 0 0 10px 2px;
+    padding: 2%;
+    text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.5),
+        0 0 8px rgba(255, 255, 255, 0.3);
+    transition: opacity 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    -webkit-backdrop-filter: blur(4px);
 }
+
 .btn:hover {
+    background-color: rgba(199, 211, 221, 0.6);
     border-color: white;
+    opacity: 0.9;
 }
+
 .buttonGrid {
     display: grid;
     gap: 10px;
@@ -60,8 +75,14 @@ button {
 }
 
 #text {
-    background-color: #d6c9c9ff;
-    box-shadow: 0 0 10px 2px;
-    font-size: 180%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(214, 201, 201, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    color: #1a1a1a; 
+    font-size: 120%;
     padding: 5%;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    -webkit-backdrop-filter: blur(4px);
 }
