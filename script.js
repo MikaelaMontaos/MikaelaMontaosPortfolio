@@ -8,49 +8,19 @@ const textNodes = [
             {
                 text: 'Learn more about Mikaela',
                 nextText: 2,
-                backgroundImages: [
-                    'images/0024.png', 'images/0025.png', 'images/0026.png', 'images/0027.png',
-                    'images/0028.png', 'images/0029.png', 'images/0030.png', 'images/0031.png',
-                    'images/0032.png', 'images/0033.png', 'images/0034.png', 'images/0035.png',
-                    'images/0036.png', 'images/0037.png', 'images/0038.png', 'images/0039.png',
-                    'images/0040.png', 'images/0041.png', 'images/0042.png', 'images/0043.png',
-                    'images/0044.png', 'images/0045.png', 'images/0046.png', 'images/0047.png',
-                    'images/0048.png', 'images/0049.png', 'images/0050.png', 'images/0051.png',
-                    'images/0052.png', 'images/0053.png', 'images/0054.png', 'images/0055.png',
-                    'images/0056.png', 'images/0057.png', 'images/0058.png', 'images/0059.png',
-                    'images/0060.png', 'images/0061.png', 'images/0062.png', 'images/0063.png',
-                    'images/0064.png', 'images/0122.png'
-                ]
+                backgroundVideo: 'videos/Morning-Afternoon.mp4'
             },
             {
                 text: 'View Mikaela\'s portfolio',
                 nextText: 3,
-                backgroundImages: [
-                    'images/0024.png', 'images/0025.png', 'images/0026.png', 'images/0027.png',
-                    'images/0028.png', 'images/0029.png', 'images/0030.png', 'images/0031.png',
-                    'images/0032.png', 'images/0033.png', 'images/0034.png', 'images/0035.png',
-                    'images/0036.png', 'images/0037.png', 'images/0038.png', 'images/0039.png',
-                    'images/0040.png', 'images/0041.png', 'images/0042.png', 'images/0043.png',
-                    'images/0044.png', 'images/0045.png', 'images/0046.png', 'images/0047.png',
-                    'images/0048.png', 'images/0049.png', 'images/0050.png', 'images/0051.png',
-                    'images/0052.png', 'images/0053.png', 'images/0054.png', 'images/0055.png',
-                    'images/0056.png', 'images/0057.png', 'images/0058.png', 'images/0059.png',
-                    'images/0060.png', 'images/0061.png', 'images/0062.png', 'images/0063.png',
-                    'images/0064.png', 'images/0122.png',
-                    'images/0154.png', 'images/0155.png', 'images/0156.png', 'images/0157.png',
-                    'images/0158.png', 'images/0159.png', 'images/0160.png', 'images/0161.png',
-                    'images/0162.png', 'images/0163.png', 'images/0164.png', 'images/0165.png',
-                    'images/0166.png', 'images/0167.png', 'images/0168.png', 'images/0169.png',
-                    'images/0170.png', 'images/0171.png', 'images/0172.png', 'images/0173.png',
-                    'images/0174.png'
-                ]
+                backgroundVideo: 'videos/Morning-Night.mp4'
             },
         ]
     },
     {
         id: 2,
         text: 'I love bringing ideas to life while utilizing both my art and technology skills. Whether it\'s computer science, game design, graphic design, or digital art, I\'m all about making things that are both beautiful and functional.',
-        staticBackground: 'images/0122.png',
+        staticBackground: 'images/0001.png',
         options: [
             {
                 text: 'Github (code)',
@@ -71,26 +41,14 @@ const textNodes = [
             {
                 text: 'Back',
                 nextText: 1,
-                backgroundImages: [
-                    'images/0064.png', 'images/0063.png', 'images/0062.png', 'images/0061.png',
-                    'images/0060.png', 'images/0059.png', 'images/0058.png', 'images/0057.png',
-                    'images/0056.png', 'images/0055.png', 'images/0054.png', 'images/0053.png',
-                    'images/0052.png', 'images/0051.png', 'images/0050.png', 'images/0049.png',
-                    'images/0048.png', 'images/0047.png', 'images/0046.png', 'images/0045.png',
-                    'images/0044.png', 'images/0043.png', 'images/0042.png', 'images/0041.png',
-                    'images/0040.png', 'images/0039.png', 'images/0038.png', 'images/0037.png',
-                    'images/0036.png', 'images/0035.png', 'images/0034.png', 'images/0033.png',
-                    'images/0032.png', 'images/0031.png', 'images/0030.png', 'images/0029.png',
-                    'images/0028.png', 'images/0027.png', 'images/0026.png', 'images/0025.png',
-                    'images/0024.png', 'images/0001.png'
-                ]
+                backgroundVideo: 'videos/Afternoon-Morning.mp4'
             }
         ]
     },
     {
         id: 3,
         text: 'Check out these games I worked on. Some projects I worked solo and some I worked as part of a team.',
-        staticBackground: 'images/0174.png',
+        staticBackground: 'images/0001.png',
         options: [
             {
                 text: 'Oublivious on Steam',
@@ -107,35 +65,17 @@ const textNodes = [
             {
                 text: 'Back',
                 nextText: 1,
-                backgroundImages: [
-                    'images/0174.png', 'images/0173.png', 'images/0172.png', 'images/0171.png',
-                    'images/0170.png', 'images/0169.png', 'images/0168.png', 'images/0167.png',
-                    'images/0166.png', 'images/0165.png', 'images/0164.png', 'images/0163.png',
-                    'images/0162.png', 'images/0161.png', 'images/0160.png', 'images/0159.png',
-                    'images/0158.png', 'images/0157.png', 'images/0156.png', 'images/0155.png',
-                    'images/0154.png', 'images/0122.png',
-                    'images/0064.png', 'images/0063.png', 'images/0062.png', 'images/0061.png',
-                    'images/0060.png', 'images/0059.png', 'images/0058.png', 'images/0057.png',
-                    'images/0056.png', 'images/0055.png', 'images/0054.png', 'images/0053.png',
-                    'images/0052.png', 'images/0051.png', 'images/0050.png', 'images/0049.png',
-                    'images/0048.png', 'images/0047.png', 'images/0046.png', 'images/0045.png',
-                    'images/0044.png', 'images/0043.png', 'images/0042.png', 'images/0041.png',
-                    'images/0040.png', 'images/0039.png', 'images/0038.png', 'images/0037.png',
-                    'images/0036.png', 'images/0035.png', 'images/0034.png', 'images/0033.png',
-                    'images/0032.png', 'images/0031.png', 'images/0030.png', 'images/0029.png',
-                    'images/0028.png', 'images/0027.png', 'images/0026.png', 'images/0025.png',
-                    'images/0024.png', 'images/0001.png'
-                ]
+                backgroundVideo: 'videos/Night-Morning.mp4'
             }
         ]
     }
 ]
 
-// For text and options
+// const
 const textElement = document.getElementById('text');
 const optionButtonsElement = document.getElementById('optionButtons');
-
-let state = {}
+const staticBg = document.getElementById('staticBackground');
+const video = document.getElementById('backgroundVideo');
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Website loaded successfully");
@@ -148,8 +88,19 @@ function startGame() {
     showTextNode(1);
 }
 
+function setBackground(imageUrl) {
+    const bg = document.getElementById('backgroundLayer');
+    bg.style.opacity = '0';
+
+    setTimeout(() => {
+        bg.style.backgroundImage = `url('${imageUrl}')`;
+        bg.style.opacity = '1';
+    }, 50);
+}
+
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
+    textElement.innerText = textNode.text;
 
     if (!textNode) {
         console.error(`Text node with id ${textNodeIndex} not found`);
@@ -160,12 +111,23 @@ function showTextNode(textNodeIndex) {
     textElement.innerHTML = `<p>${textNode.text}</p>`;
 
     // Set static background if available 
-    if (textNode.staticBackground) {
+    /* if (textNode.staticBackground) {
         document.body.style.backgroundImage = `url('${textNode.staticBackground}')`;
+        video.pause();
+        video.style.display = 'none';
     } else {
-        document.body.style.backgroundImage = "";
+        document.body.style.backgroundImage = '';
+    } */
+
+    // ✅ Set static background immediately on load
+    if (textNode.staticBackground) {
+        staticBg.style.backgroundImage = `url('${textNode.staticBackground}')`;
+        staticBg.style.opacity = '1';
+        video.style.opacity = '0';
+        video.pause();
     }
 
+    // Clear and render options
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
@@ -179,6 +141,30 @@ function showTextNode(textNodeIndex) {
     });
 }
 
+function playBackgroundVideo(src, fallbackImage) {
+    // Show static background immediately
+    staticBg.style.backgroundImage = `url('${fallbackImage}')`;
+    staticBg.style.opacity = '1';
+    video.style.opacity = '0';
+
+    // Reset and load new video
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    video.src = src;
+    video.load();
+
+    video.oncanplay = () => {
+        video.play().catch(err => console.error('Video play failed:', err));
+        video.style.opacity = '1';
+
+        // Fade out static background after video is visible
+        setTimeout(() => {
+            staticBg.style.opacity = '0';
+        }, 100); // slight delay ensures video is visible before fade
+    };
+}
+
 function selectOption(option) {
     // If option has link then open in new tab then return
     if (option.link) {
@@ -189,39 +175,25 @@ function selectOption(option) {
     const nextTextNodeId = option.nextText;
     state = Object.assign(state, option.setState);
 
-    // Show static background immediately if provided 
-    if (option.staticBackground) {
-        document.body.style.backgroundImage = `url('${option.staticBackground}')`;
+    // Video background
+    if (option.backgroundVideo) {
+        const nextNode = textNodes.find(node => node.id === option.nextText);
+        const fallbackImage = nextNode?.staticBackground || '';
+        playBackgroundVideo(option.backgroundVideo, fallbackImage);
+    } else {
+        video.pause();
+        video.style.opacity = '0';
+        staticBg.style.opacity = '1';
+
+        const nextNode = textNodes.find(node => node.id === option.nextText);
+        if (nextNode?.staticBackground) {
+            staticBg.style.backgroundImage = `url('${nextNode.staticBackground}')`;
+        } else {
+            staticBg.style.backgroundImage = '';
+        }
     }
 
-    showTextNode(nextTextNodeId);
-
-    // Animate background images after user clicks option 
-    if (option.backgroundImages && option.backgroundImages.length > 0) {
-        const body = document.body;
-        let index = 0;
-
-        if (window.bgAnimationInterval) clearInterval(window.bgAnimationInterval);
-
-        option.backgroundImages.forEach(src => {
-            const img = new Image();
-            img.src = src;
-        });
-
-        window.bgAnimationInterval = setInterval(() => {
-            body.style.backgroundImage = `url('${option.backgroundImages[index]}')`;
-            console.log(`Animating: ${option.backgroundImages[index]}`);
-            index++;
-            if (index >= option.backgroundImages.length) {
-                clearInterval(window.bgAnimationInterval);
-
-                // Hold the last frame for a moment
-                setTimeout(() => {
-                    document.body.style.backgroundImage = `url('${option.backgroundImages[option.backgroundImages.length - 1]}')`;
-                }, 200);
-            }
-        }, 200);
-    }
+    showTextNode(nextTextNodeId); // this must run after video logic
 }
 
 // Copy email
