@@ -63,6 +63,14 @@ const textNodes = [
                 link: 'https://mikaela-m-09.itch.io/coconut-cascade'
             },
             {
+                text: 'The Way Home downloadable for Windows',
+                link: 'https://1drv.ms/u/c/dee0b8ea014b5989/IQCJWUsB6rjgIIDeB4ACAAAAAam8jCsJfDIrO5OzgEfXVv4?e=ezm1lx'
+            },
+            {
+                text: 'Art portfolio',
+                link: 'https://1drv.ms/f/c/dee0b8ea014b5989/IgDlXPplWhhTS6EuJxFWzNobAZfLQBnL4nyJ9D5FJDe9utE?e=xhIraa'
+            },
+            {
                 text: 'Back',
                 nextText: 1,
                 backgroundVideo: 'videos/Night-Morning.mp4'
