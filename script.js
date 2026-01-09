@@ -47,7 +47,7 @@ const textNodes = [
     },
     {
         id: 3,
-        text: 'Check out these games I worked on. Some projects I worked solo and some I worked as part of a team.',
+        text: 'My game and art portfolio. Some projects I worked solo and some I worked as part of a team.',
         staticBackground: 'images/0001.png',
         options: [
             {
